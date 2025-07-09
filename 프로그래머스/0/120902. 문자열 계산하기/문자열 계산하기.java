@@ -4,8 +4,8 @@ class Solution {
         int answer = Integer.parseInt(tokens[0]); // 첫 번째 숫자부터 시작
 
         for (int i = 1; i < tokens.length; i += 2) {
-            String operator = tokens[i];
-            int number = Integer.parseInt(tokens[i + 1]);
+            String operator = tokens[i];//연산자
+            int number = Integer.parseInt(tokens[i + 1]);//숫자
 
             if (operator.equals("+")) {
                 answer += number;
